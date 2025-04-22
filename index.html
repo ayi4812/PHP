@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Sam's Portfolio</a>
+
+    <!-- Desktop View Links -->
+    <div class="d-none d-lg-flex">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Button to trigger offcanvas navbar -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Offcanvas Menu for Mobile -->
+<div class="offcanvas offcanvas-start custom-bg text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">MyPortfolio</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Hero Section -->
+<div class="hero">
+  <img src="hero.jpg" alt="background" class="hero-image">
+  <div class="hero-text">
+    <h1 class="display-4 fw-bold">Hi, I'm Samantha</h1>
+    <p class="lead">Student | Dancer | Creative Thinker</p>
+  </div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <h2 class="text-center mb-5">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 mb-4 mb-md-0 text-center">
+        <img src="sam.jpg" alt="Profile" class="img-fluid rounded-circle shadow">
+      </div>
+      <div class="col-md-8">
+        <p class="text-justify">
+          My name is Ma. Samantha Elizabeth M. Depamaylo, a 20-year-old resident of San Pedro, Laguna. I am currently pursuing a Bachelor of Science in Information Technology with a Specialization in Web and Mobile Applications at FEU Alabang. Alongside my academic pursuits, I have a profound passion for the performing arts, with a particular focus on dance. Having been engaged in dance since childhood, I am now an active member of a dance group where I continue to develop and showcase my creativity, discipline, and expressive capabilities through performance. I consider myself a creative thinker with a strong inclination toward innovative problem-solving. Whether it involves designing user-friendly interfaces, implementing new features, or generating original ideas, I always strive to merge aesthetics with functionality. My ultimate goal is to create digital experiences that are not only efficient and reliable but also visually engaging and impactful for end-users. In addition to my creative and technical interests, I am also passionate about sports, particularly badminton. This sport has instilled in me valuable life skills such as focus, perseverance, and the importance of maintaining both mental and physical discipline. These qualities continue to shape my approach to academic, personal, and professional endeavors. As a student, artist, and athlete, I am committed to continuous growth and excellence in all areas I engage with, aiming to make meaningful contributions in both the technology and creative fields.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="mb-3">
+          <strong>HTML <span class="float-end">95%</span></strong>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-dark" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>CSS <span class="float-end">95%</span></strong>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-dark" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>PHP <span class="float-end">50%</span></strong>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-dark" style="width: 50%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="mb-3">
+          <strong>JavaScript <span class="float-end">90%</span></strong>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-dark" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>Java <span class="float-end">80%</span></strong>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-dark" style="width: 80%;"></div> <!-- Corrected width -->
+          </div>
+        </div>
+        <div class="mb-3">
+          <strong>Python <span class="float-end">70%</span></strong>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-dark" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row mt-4">
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="p1.jpg" class="card-img-top card-img-custom" alt="Project 1" />
+          <div class="card-body">
+            <h5 class="card-title">Dancer</h5>
+            <p class="card-text">I initiated developing original choreography for various dance performances. This involved researching different styles, selecting appropriate music, and crafting movement sequences that convey emotion and narrative. I collaborated with performers, conducted rehearsals, and refined the choreography based on feedback and performance goals. Through this, I gained valuable experience in leadership, time management, and creative direction..</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="p2.jpg" class="card-img-top card-img-custom" alt="Project 2" />
+          <div class="card-body">
+            <h5 class="card-title">Seller</h5>
+            <p class="card-text">I undertook running a mini doughnut business. I started this small venture during a period when I had more flexibility in my schedule. I handled the entire process—from sourcing ingredients and preparing the products to promoting them through word-of-mouth and social media. This project helped me develop entrepreneurial skills such as budgeting, customer engagement, and basic marketing strategies. It also taught me the importance of consistency, product quality, and customer satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="p3.png" class="card-img-top card-img-custom" alt="Project 3" />
+          <div class="card-body">
+            <h5 class="card-title">Writer</h5>
+            <p class="card-text">I have worked on writing commissioned poems as a creative freelance project. Clients would provide me with themes, personal stories, or special occasions, and I would translate their ideas into carefully structured, emotionally resonant poetry. Each piece required close attention to language, tone, and style to ensure it captured the client’s vision. This helped me sharpen my writing skills and understand the importance of clear communication and client collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light">
+  <div class="container">
+    <h2 class="text-center">Contact</h2>
+    <form class="mt-4 mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="example@mail.com" />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark w-100">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p>&copy; 2025 Sam's Portfolio. All rights reserved.</p>
+    <div>
+      <a href="https://www.facebook.com/ayiram.dep?rdid=JkjAKfO63M1DDZWP&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BvGJut2Co%2F#" class="text-white me-3">Facebook</a>
+      <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fx.com%2Fmeiyruuh%3Ft%3DtebEP36SxW21ED6bWLSxNg%26s%3D09&h=AT0f5zBTtSGLWh-Eq0JqrCZcSDKEYsrsVbPiIM5HV_nAA4iRTD8xf5NsiCbpBhDINq3PHnT_bObKoQFIw11bYso2KV2kOoyPyILSi9KdGqgUlmJBgENvS_RFhV9UR_HlAojeo6V8mqj1OXlSgjE_Ew" class="text-white me-3">Twitter</a>
+      <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmeiyruh%3Figsh%3DNjZuODZhcDAwaG5q&h=AT0f5zBTtSGLWh-Eq0JqrCZcSDKEYsrsVbPiIM5HV_nAA4iRTD8xf5NsiCbpBhDINq3PHnT_bObKoQFIw11bYso2KV2kOoyPyILSi9KdGqgUlmJBgENvS_RFhV9UR_HlAojeo6V8mqj1OXlSgjE_Ew" class="text-white me-3">Instagram</a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</html>
